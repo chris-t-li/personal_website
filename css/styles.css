@@ -66,6 +66,10 @@ header nav ul li a {
 
 section#intro {
     background-image: url("../images/nyc-clay-leconey-unsplash.jpg");
+    background-position: 75% center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-size: 100%; 
     max-width: 100%;
     height: 800px;
@@ -113,6 +117,10 @@ section#intro div a:hover {
 section#aboutMe {
     background-image: url("../images/muskroom-jU5tl_ii-oU-unsplash.jpg");
     background-size: 100%;
+    /* background-position: right center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover; */
     width: 100%;
     height: 700px;
 }
@@ -181,6 +189,10 @@ section#work {
     background-image: url("../images/projects-2h-media-unsplash.jpg");
     background-size: 100%;
     width: 100%;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 section#work div h2 {
@@ -262,6 +274,10 @@ section#work div a.fa-solid:hover {
 
 section#books {
     background-image: url("../images/shelf-bundo-kim-unsplash.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-size: 100%;
     width: 100%;
 }
