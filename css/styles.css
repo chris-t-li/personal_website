@@ -8,7 +8,7 @@ header {
     height: 52px;
     background-color: white;
     max-width: 100%;
-    min-width: 500px;
+    /* min-width: 500px; */
 }
 
 header div ul li {
@@ -67,9 +67,8 @@ header nav ul li a {
 section#intro {
     background-image: url("../images/nyc-clay-leconey-unsplash.jpg");
     background-position: 75% center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
     
+    background-repeat: no-repeat;
     background-size: 100%; 
     max-width: 100%;
     height: 800px;
@@ -132,12 +131,12 @@ section#aboutMe {
 }
 
 section#aboutMe div {
-    width: 350px;
+    width: 85%;
     height: 700px;
     background-color: rgba(155, 190, 232, 0.75);
     float: left;
-    margin-left: 50px;
-    padding: 0 25px 0 25px;
+    margin-left: 5%;
+    padding: 0 5%;
 }
 
 section#aboutMe div h2 {
@@ -275,7 +274,7 @@ section#work div a.fa-solid:hover {
 section#books {
     background-image: url("../images/shelf-bundo-kim-unsplash.jpg");
     background-position: center center;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-repeat: no-repeat;
     background-size: cover;
     background-size: 100%;
