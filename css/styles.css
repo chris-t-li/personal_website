@@ -54,14 +54,6 @@ header nav ul li a {
     font-size: 1.25em;
 }
 
-/* ==== Media Query ===== */
-
-@media screen and (max-width: 550px) {
-    header nav {
-        display: none;
-    }
-}
-
 /* ===== SECTION 1 - INTRO ===== */
 
 section#intro {
@@ -72,12 +64,6 @@ section#intro {
     background-size: 100%; 
     max-width: 100%;
     height: 800px;
-}
-
-@media screen and (max-width: 1350px) {
-    section#intro  {
-        background-size: 1350px;
-    }
 }
 
 section#intro div {
@@ -124,19 +110,13 @@ section#aboutMe {
     height: 700px;
 }
 
-@media screen and (max-width: 1350px) {
-    section#aboutMe  {
-        background-size: 1350px;
-    }
-}
-
 section#aboutMe div {
-    width: 85%;
+    width: 350px;
     height: 700px;
     background-color: rgba(155, 190, 232, 0.75);
     float: left;
-    margin-left: 5%;
-    padding: 0 5%;
+    margin-left: 50px;
+    padding: 0 25px;
 }
 
 section#aboutMe div h2 {
@@ -247,36 +227,14 @@ section#work div a.fa-solid:hover {
     padding: 1.1%;
 }
 
-@media screen and (max-width: 700px) {
-    section#work {
-        height: auto;
-    }
-    
-    section#work div article p {
-        width: 100%;
-        height: 150px;
-        float: none;
-        text-align: center;
-        color: white;
-        padding-top: 20%;
-    }
-
-    section#work div.container {
-        float: none;
-        width: 80%;
-        padding: 0 10%;
-    }
-}
-
-
 /* ===== SECTION 4 - BOOKS ===== */
 
 section#books {
     background-image: url("../images/shelf-bundo-kim-unsplash.jpg");
-    background-position: center center;
-    background-attachment: scroll;
+    /* background-position: center center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     background-size: 100%;
     width: 100%;
 }
@@ -326,24 +284,6 @@ section#books div a.fa-solid:hover {
     border-color: gray;
 }
 
-@media screen and (max-width: 700px) {
-    section#books {
-        height: auto;
-    }
-    
-    section#books div div img {
-        width: 40%;
-        /* height: 350px; */
-        float: none;
-        margin: 0 27%;
-    }
-
-    section#books div.container {
-        float: none;
-        width: 85%
-    }
-
-}
 /* ===== SECTION 5 - CONTACT ===== */
 
 section#contact {
@@ -410,3 +350,59 @@ footer p a {
     border-right: solid 1px white;
 }
 
+/* ==== Media Query ===== */
+
+@media screen and (max-width: 550px) {
+    header nav {
+        display: none;
+    }
+
+    section#intro div {
+        padding-left: 15%;
+    }
+    section#aboutMe div {
+        width: 85%;
+        margin-left: 5%;
+        padding: 0 5%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    section#books, section#work {
+        height: auto;
+    }
+    
+    section#books div div img {
+        width: 40%;
+        /* height: 350px; */
+        float: none;
+        margin: 0 27%;
+    }
+
+    section#books div.container {
+        float: none;
+        width: 85%
+    }
+    
+    section#work div article p {
+        width: 100%;
+        height: 150px;
+        float: none;
+        text-align: center;
+        color: white;
+        padding-top: 20%;
+    }
+
+    section#work div.container {
+        float: none;
+        width: 80%;
+        padding: 0 10%;
+    }
+}
+
+
+@media screen and (max-width: 1350px) {
+    section#intro, section#aboutMe  {
+        background-size: 1350px;
+    }
+}
