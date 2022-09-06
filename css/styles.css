@@ -59,7 +59,6 @@ header nav ul li a {
 section#intro {
     background-image: url("../images/nyc-clay-leconey-unsplash.jpg");
     background-position: 50% center;
-    
     background-repeat: no-repeat;
     background-size: 100%; 
     max-width: 100%;
@@ -102,10 +101,6 @@ section#intro div a:hover {
 section#aboutMe {
     background-image: url("../images/muskroom-jU5tl_ii-oU-unsplash.jpg");
     background-size: 100%;
-    /* background-position: right center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover; */
     width: 100%;
     height: 700px;
 }
@@ -141,7 +136,7 @@ section#aboutMe div p span {
 }
 
 section#aboutMe div a.fa-solid {
-    margin-left: 142px;
+    margin: 0 40%;
     color: white;
     text-align: center;
     font-size: 3em;
@@ -209,7 +204,7 @@ section#work div article#Project3 p{
 }
 
 section#work div a.fa-solid {
-    margin: 2% 0 5% 47.5%;
+    margin: 5% 45%;
     color: rgb(115, 108, 98);
     text-align: center;
     font-size: 3em;
@@ -231,10 +226,6 @@ section#work div a.fa-solid:hover {
 
 section#books {
     background-image: url("../images/shelf-bundo-kim-unsplash.jpg");
-    /* background-position: center center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover; */
     background-size: 100%;
     width: 100%;
 }
@@ -267,7 +258,7 @@ section#books div h3 {
 }
 
 section#books div a.fa-solid {
-    margin: 2% 0 5% 47.5%;
+    margin: 5% 45%;
     color: white;
     text-align: center;
     font-size: 3em;
@@ -361,9 +352,13 @@ footer p a {
         text-align: center;
     }
     
+    section#intro {
+        height: 500px;
+    }
+
     section#intro h1{
         font-size: 3em;
-        margin: 10em 2em 0 0;
+        margin: 6em 2em 0 0;
     }
     
     section#intro div {
@@ -374,8 +369,6 @@ footer p a {
         margin: 0 10%;
         padding: 0 5%;
     }
-
-
 }
 
 @media screen and (max-width: 700px) {
