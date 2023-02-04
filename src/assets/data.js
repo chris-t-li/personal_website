@@ -1,6 +1,6 @@
 import flikix from "./projects/fli-kix.gif";
 import parkslope from "./projects/parkslopeicon.png";
-import xylrsphere from "./projects/xylrSphere.gif";
+import xylrsphere from "./projects/xylrsphere.gif";
 
 const projectData = [
     {
