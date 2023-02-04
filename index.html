@@ -1,123 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/normalize.css"> <!-- Normalize CSS -->
-	<link rel="stylesheet" href="css/styles.css">
-	<title>Chris Li</title>
+	<!-- <link rel="stylesheet" href="css/styles.css"> -->
+	<title>Chris Li | Software Engineer</title>
 	<script src="https://kit.fontawesome.com/cfb0d7ef06.js" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
-	<header> 
-	<div id="socialMedia">
-		<ul>
-			<li><a href="https://twitter.com/au_chrisli" target="_blank" class="fa-brands fa-twitter"></a></li>
-			<li><a href="https://www.linkedin.com/in/chris-t-li/" target="_blank" class="fa-brands fa-linkedin"></a></li>
-			<li><a href="https://github.com/chris-t-li" target="_blank" class="fa-brands fa-github"></a></li>
-		</ul>
-	</div>
-	<nav>
-		<ul>
-			<li><a href="#aboutMe">Intro</a></li>
-			<li><a href="#work">Projects</a></li>
-			<li><a href="#books">Books</a></li>
-			<li><a href="#contact">Contact</a></li>
-		</ul>
-	</nav>
-	</header>
-
-	<section id="intro">
-		<div class="container">
-			<h1>Chris Li.</h1>
-			<p>Software Engineering Student</p>
-			<a href="#aboutMe" class="fa-solid fa-arrow-down"></a>
-		</div>
-	</section>
-
-	<section id="aboutMe">
-		<div class="container">
-		<h2>About Me</h2>
-		<p>I am a Software Engineering student based in New York, NY. I've always enjoyed building things from a young age. I am passionate about learning and solving problems using code. When I'm not coding, I enjoy staying <a href="https://www.strava.com/athletes/53639074" target="_blank">active<span class="fa-brands fa-strava"></span></a>, reading, spending time with family and taking care of my <a href="https://www.instagram.com/archie_fluffytuff/" target="_blank">cat<span class="fa-brands fa-instagram"></span></a>.</p>
-		<a href="#work" class="fa-solid fa-arrow-down"></a>
-		</div>
-	</section>
-
-	<section id="work">
-		<div class="container">
-			<h2>My Projects</h2>
-			<h3>What I am currently working on...</h3>
-			
-			<div id="Project1">
-				<article >
-					<h4>My First Fetch</h4>
-					<img src="images/nasa_ISS.jpg">
-					<p><a href="https://medium.com/@chris.lty07/my-first-fetch-tracking-the-international-space-station-29643a1de8e">Tracking the International Space Station</a></p>
-				</article>
-			</div>
-		
-			<div>
-				<article id="Project2">
-					<p>Placeholder Project 2</p>
-				</article>
-			</div>
-		
-			<div>
-				<article id="Project3">
-					<p>Placeholder Project 3</p>
-				</article>
-			</div>
-		
-			<div>
-				<a href="#books" class="fa-solid fa-arrow-down"></a>
-			</div>
-		</div>
-	</section>
-	
-	<section id="books">
-		<div class="container">
-		<h2>Books</h2>
-		<h3>What I've been reading...</h3>
-		<div>
-			<article>
-				<a href="https://www.goodreads.com/book/show/54493401-project-hail-mary" target="_blank"><img src="images/books/projectHailMary.jpeg" alt="Project Hail Mary"></a>
-			</article>
-			<article>
-				<a href="https://stolenfocusbook.com/" target="_blank"><img src="images/books/stolen_focus.jpg" alt="Stolen Focus Cover"></a>
-			</article>
-			<article>
-				<a href="https://wwnorton.com/books/9781324004295" target="_blank"><img src="images/books/cryptography.jpeg" alt="Cryptography"></a>
-			</article>
-			<article>
-				<a href="https://wwnorton.com/books/9780393881554" target="_blank"><img src="images/books/thePremonition.jpeg" alt="The Premonition"></a>
-			</article>
-		</div>
-		<div>
-			<a href="#contact" class="fa-solid fa-arrow-down"></a>
-		</div>
-		</div>
-	</section>
-
-	<section id="contact">
-		<h2>Say Hello!</h2>
-		<p></p>
-		<form>
-			<input type="text" placeholder="Name" id="contactName">
-			<input type="email" placeholder="Email" id="contactEmail">
-			<textarea placeholder="Message" rows="5"></textarea>
-		</form>
-		<button><a href="mailto:skyy_@live.com"></a>Send</a></button>
-	</section>
-	<footer>
-		<p>References: Images - <a href="https://unsplash.com/" target="_blank">unsplash</a> Icons - <a href="https://fontawesome.com/" target="_blank">Font Awesome</a></p>
-	</footer>
-
-	<script type="text/javascript" src="js/index.js"></script>
+	<div id="root"></div>
+	<script type="module" src="/src/main.jsx"></script>
 </body>
+
 </html>
