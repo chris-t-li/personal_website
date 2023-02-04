@@ -183,17 +183,32 @@ section#work div.container {
     padding: 0 5%;
 }
 
-section#work div article p {
+/* section#work div article p {
     width: 33%;
     float: left;
     text-align: center;
     color: white;
     padding: 25% 0;
+} */
+
+section#work div div#Project1 {
+    width: 33%;
+    float: left;
+    text-align: center;
+    color: white;
+    padding: 25% 0%;
 }
 
 section#work div article#Project1 p{
     background-image: url("../images/fulls/02.jpg");
 }
+
+section#work div div#Project1 img{
+    width: 200px;
+    display: float;    
+}
+
+
 
 section#work div article#Project2 p{
     background-image: url("../images/fulls/03.jpg");
@@ -362,7 +377,7 @@ footer p a {
 
     section#intro h1{
         font-size: 3em;
-        margin: 7em 2em 0 0;
+        margin: 8em 2em 0 0;
     }
     
     section#intro div {
@@ -407,7 +422,6 @@ footer p a {
         padding: 0 10%;
     }
 }
-
 
 @media screen and (max-width: 1350px) {
     section#intro, section#aboutMe  {
