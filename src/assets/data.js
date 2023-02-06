@@ -1,4 +1,4 @@
-import flikix from "./projects/fli-kix.gif";
+import flikix from "./projects/flikix-cropped.gif";
 import parkslope from "./projects/parkslopeicon.png";
 import xylrsphere from "./projects/xylrsphere.gif";
 
@@ -23,21 +23,7 @@ const projectData = [
         description: "Tracking historical produce prices at a local coop in Parkslope, Brooklyn",
         link: "https://parkslopeproduce-v1.onrender.com/",
         github: "https://github.com/bsipin20/parkslope-coop"
-    },
-    {
-        name: "Hermes",
-        imageURL: "",
-        description: "Message/Chat Application",
-        link: "",
-        github: "https://github.com/altiglesia/Hermes-Front-End"
-    },
-    {
-        name: "Foodies",
-        imageURL: "",
-        description: "Social media platform for foodies and restaurants in New York",
-        link: "",
-        github: "https://github.com/chris-t-li/foodies"
-    },
+    }
 ]
 
 export default projectData
