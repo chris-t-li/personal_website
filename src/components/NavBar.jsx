@@ -3,7 +3,7 @@ function NavBar() {
         <header>
             <div id="socialMedia">
                 <ul>
-                    <li><a href="https://twitter.com/au_chrisli" target="_blank" className="fa-brands fa-twitter"></a></li>
+                    {/* <li><a href="https://twitter.com/au_chrisli" target="_blank" className="fa-brands fa-twitter"></a></li> */}
                     <li><a href="https://www.linkedin.com/in/chris-t-li/" target="_blank" className="fa-brands fa-linkedin"></a>
                     </li>
                     <li><a href="https://github.com/chris-t-li" target="_blank" className="fa-brands fa-github"></a></li>

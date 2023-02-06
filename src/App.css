@@ -5,20 +5,6 @@
   text-align: center;
 }
 
-/* .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-} */
-
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -52,7 +38,6 @@
 header {
   height: 52px;
   background-color: white;
-  /* max-width: 100%; */
   min-width: 1200px;
 }
 
@@ -125,6 +110,7 @@ section#intro div p {
   background-color: rgba(130, 135, 143, 0.35);
   height: 30px;
   font-size: 1.25em;
+  text-align: left;
 }
 
 section#intro div a {
@@ -150,6 +136,17 @@ section#aboutMe {
   height: 700px;
 }
 
+section#aboutMe iFrame {
+  position: absolute;
+  left: 32em;
+  top: 70em;
+}
+
+section#aboutMe div p a:hover {
+  color: rgb(255, 080, 034);
+  cursor: default;
+}
+
 section#aboutMe div {
   width: 350px;
   height: 700px;
@@ -160,7 +157,7 @@ section#aboutMe div {
 }
 
 section#aboutMe div h2 {
-  margin: 2em 0 0 0;
+  margin: 3.5em 0 0 0;
   color: white;
   font-size: 3.5em;
 }
@@ -205,10 +202,10 @@ section#aboutMe div p span:hover {
 
 /* ===== SECTION 3 - TECH STACK ===== */
 section#tech-stack {
-  /* background-image: url("./assets/muskroom-jU5tl_ii-oU-unsplash.jpg"); */
+  background-color: rgba(60, 64, 67, 0.3);
   background-size: 100%;
   width: 100%;
-  height: 750px;
+  height: 100%;
 }
 
 section#tech-stack>.my-tech-stack {
@@ -216,8 +213,10 @@ section#tech-stack>.my-tech-stack {
   margin: auto;
 }
 
-section#tech-stack h1 {
-  font-size: 2.25em;
+section#tech-stack h2 {
+  font-size: 3em;
+  padding: 1em;
+  margin: 0;
 }
 
 section#tech-stack div svg {
@@ -229,34 +228,33 @@ section#tech-stack img {
 }
 
 section#tech-stack a.fa-solid {
-  margin: 0 40%;
-  color: white;
+  margin: 1% 40%;
+  color: rgb(115, 108, 98);
   text-align: center;
   font-size: 3em;
   text-decoration: none;
   border-radius: 50px;
-  border: 2px solid white;
+  border: 2px solid rgb(115, 108, 98);
   padding: 1%;
   width: 48px;
   height: 48px;
 }
 
 section#tech-stack a.fa-solid:hover {
-  color: rgb(120, 120, 120);
-  border-color: rgb(120, 120, 120);
+  color: white;
+  border-color: white;
 }
 
 /* ===== SECTION 3 - MY PROJECTS ===== */
 
 section#work {
-  background-image: url("./assets/projects-2h-media-unsplash.jpg");
   background-size: 100%;
+  background-color: linen;
   width: 100%;
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  /* display: inline-flex; */
 }
 
 section#work div h2 {
@@ -275,14 +273,13 @@ section#work div#project-list-container {
   width: 90%;
   height: 100%;
   padding: 0 5%;
-  /* display: inline-flex; */
 }
 
 section#work div#project-list-container div.project-card {
   width: 30%;
-  /* height: 250px; */
   background-color: rgba(7, 14, 21, 0.35);
   border: 1px solid gray;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   border-radius: 8px;
   margin: 1em;
   display: inline-block;
@@ -293,11 +290,15 @@ section#work div#project-list-container div.project-card img {
   height: 300px;
 }
 
+section#work div#project-list-container div.project-card p {
+  height: 3em;
+}
+
 section#work div#project-list-container div.project-card a {
   display: block;
 }
 
-section#work div a.fa-solid {
+section#work a.fa-solid {
   margin: 5% 45%;
   color: rgb(115, 108, 98);
   text-align: center;
@@ -310,10 +311,9 @@ section#work div a.fa-solid {
   height: 48px;
 }
 
-section#work div a.fa-solid:hover {
+section#work a.fa-solid:hover {
   color: black;
   border-color: black;
-  padding: 1.1%;
 }
 
 /* ===== SECTION 4 - BOOKS ===== */
@@ -333,7 +333,6 @@ section#books div h2 {
 }
 
 section#books div.container {
-  /* float: left; */
   width: 85%;
   height: 100%;
   padding: 0 7.5%;

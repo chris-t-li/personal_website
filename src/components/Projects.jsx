@@ -14,7 +14,7 @@ function Projects() {
             <div id="project-list-container">
                 {renderProjects}
             </div>
-
+            <a href="#books" className="fa-solid fa-arrow-down"></a>
         </section >
     )
 }
