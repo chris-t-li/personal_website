@@ -18,7 +18,10 @@ function About() {
                 </p>
                 <a href="#tech-stack" className="fa-solid fa-arrow-down"></a>
             </div>
-            {showStrava && stravaIframe}
+            {showStrava &&
+                <div>
+                    {stravaIframe}
+                </div>}
 
         </section >
     )

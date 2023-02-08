@@ -137,9 +137,10 @@ section#aboutMe {
 }
 
 section#aboutMe iFrame {
-  position: absolute;
-  left: 32em;
-  top: 70em;
+  /* position: absolute; */
+  /* left: 30em; */
+  /* top: 70em; */
+  padding-top: 10em;
 }
 
 section#aboutMe div p a:hover {
@@ -147,7 +148,7 @@ section#aboutMe div p a:hover {
   cursor: default;
 }
 
-section#aboutMe div {
+section#aboutMe>div {
   width: 350px;
   height: 700px;
   background-color: rgba(155, 190, 232, 0.75);
