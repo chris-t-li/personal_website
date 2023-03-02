@@ -1,7 +1,7 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  /* padding: 2rem; */
   text-align: center;
 }
 
@@ -84,6 +84,8 @@ header nav ul li a {
   font-size: 1.25em;
 }
 
+
+
 /* ===== SECTION 1 - INTRO ===== */
 
 section#intro {
@@ -120,6 +122,13 @@ section#intro div a {
   width: 48px;
   text-align: center;
   padding: 2%;
+  animation: blinkerIntro 3s linear infinite;
+}
+
+@keyframes blinkerIntro {
+  50% {
+    opacity: 0;
+  }
 }
 
 section#intro div a:hover {
@@ -137,9 +146,6 @@ section#aboutMe {
 }
 
 section#aboutMe iFrame {
-  /* position: absolute; */
-  /* left: 30em; */
-  /* top: 70em; */
   padding-top: 10em;
 }
 
@@ -157,8 +163,14 @@ section#aboutMe>div {
   padding: 0 25px;
 }
 
+section#aboutMe div img {
+  width: 15em;
+  border-radius: 100%;
+  margin-top: 3em;
+}
+
 section#aboutMe div h2 {
-  margin: 3.5em 0 0 0;
+  margin: 0.5em 0 0 0;
   color: white;
   font-size: 3.5em;
 }
@@ -180,15 +192,22 @@ section#aboutMe div p span {
 
 section#aboutMe div a.fa-solid {
   margin: 0 40%;
-  color: white;
+  color: gray;
   text-align: center;
   font-size: 3em;
   text-decoration: none;
   border-radius: 50px;
-  border: 2px solid white;
+  border: 2px solid gray;
   padding: 2%;
   width: 48px;
   height: 48px;
+  animation: blinkerAbout 3s linear infinite;
+}
+
+@keyframes blinkerAbout {
+  50% {
+    opacity: 0;
+  }
 }
 
 section#aboutMe div a.fa-solid:hover {
@@ -442,52 +461,122 @@ footer p a {
 
 /* ==== Media Query ===== */
 
+
+
 @media screen and (max-width: 550px) {
   header nav {
     display: none;
   }
 
   header div#socialMedia {
-    text-align: center;
+    height: 3em;
+    display: flex;
+    place-items: center;
+    font-size: large;
   }
 
   section#intro {
-    height: 650px;
+    height: 100vh;
+    background-size: 150vh;
+    background-position-x: -25em;
+    margin: -2em;
   }
 
-  section#intro h1 {
+  section#intro {
+    display: flex;
+  }
+
+  section#intro div.container {
+    padding: 4em 0 0 4em;
+  }
+
+  section#intro div h1 {
+    background-color: rgba(130, 135, 143, 0.7);
+  }
+
+  section#intro div p {
+    background-color: rgba(130, 135, 143, 0.7);
+    height: 30px;
+    width: 10em;
+  }
+
+  section#aboutMe {
+    background-size: 150vh;
+    height: 100vh;
+  }
+
+  section#aboutMe div.container {
+    padding: 1em 0 0 0;
+    height: 100vh;
+    width: 25%;
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  section#aboutMe div.container img {
+    width: 80%;
+    border-radius: 100%;
+    margin: 2em 0;
+  }
+
+  section#aboutMe div.container h2 {
+    color: black;
+    margin: 0.5em;
+  }
+
+  section#aboutMe div.container p {
+    padding: 1em 0;
+  }
+
+  section#aboutMe div iframe {
+    display: none;
+  }
+
+  section#tech-stack h2 {
     font-size: 3em;
-    margin: 8em 2em 0 0;
+    text-align: left;
+    padding-top: 1.5em;
+    /* margin: 0; */
   }
 
-  section#intro div {
-    padding-left: 15%;
+  section#tech-stack>.my-tech-stack {
+    width: 30%;
+    margin: 2em;
   }
 
-  section#aboutMe div {
-    width: 70%;
-    margin: 0 10%;
-    padding: 0 5%;
+  section#tech-stack div.github-stats {
+    display: block;
   }
-}
 
-@media screen and (max-width: 700px) {
+  section#tech-stack div.github-stats img {
+    display: block;
+    width: 100vw;
+  }
+
+  section#work div#project-list-container div.project-card {
+    display: block;
+    width: 80vw;
+  }
 
   section#books,
   section#work {
     height: auto;
+    width: 100vw;
+  }
+
+  section#books div.container {
+    display: block;
+    margin: 0;
+    padding: 0;
   }
 
   section#books div div img {
-    width: 40%;
-    /* height: 350px; */
+    width: 50vw;
     float: none;
-    margin: 0 27%;
   }
 
   section#books div.container {
     float: none;
-    width: 85%
+    width: 100vw;
   }
 
   section#work div article p {
@@ -501,15 +590,7 @@ footer p a {
 
   section#work div.container {
     float: none;
-    width: 80%;
+    width: 100vw;
     padding: 0 10%;
-  }
-}
-
-@media screen and (max-width: 1350px) {
-
-  section#intro,
-  section#aboutMe {
-    background-size: 1350px;
   }
 }

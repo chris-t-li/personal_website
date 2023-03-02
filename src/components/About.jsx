@@ -1,4 +1,5 @@
 import { useState } from "react";
+import profilePic from "../assets/headshot.png"
 
 function About() {
     const [showStrava, setShowStrava] = useState(false);
@@ -10,12 +11,14 @@ function About() {
     return (
         <section id="aboutMe">
             <div className="container">
+                <img src={profilePic} alt="profile headshot" />
                 <h2>About Me</h2>
                 <p>I am a Software Engineer based in New York. I've always enjoyed building things from a young age. I am passionate about learning new skills and solving problems using code. When I'm not coding, I enjoy cycling (<a onClick={showRides}>recent rides</a>), reading, spending time with family and taking care of my cat
                     <a href="https://www.instagram.com/archie_fluffytuff/" target="_blank">
                         <span className="fa-brands fa-instagram"></span>
                     </a>.
                 </p>
+
                 <a href="#tech-stack" className="fa-solid fa-arrow-down"></a>
             </div>
             {showStrava &&

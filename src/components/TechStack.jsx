@@ -73,9 +73,11 @@ function TechStack() {
 
             </div>
             <h2>GitHub Stats</h2>
-            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=chris-t-li&layout=compact&theme=vision-friendly-dark&count_private=true"></img>
+            <div className="github-stats">
+                <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=chris-t-li&layout=compact&theme=vision-friendly-dark&count_private=true"></img>
+                <img src="https://github-readme-streak-stats.herokuapp.com/?user=chris-t-li&theme=dark&background=000000"></img>
+            </div>
 
-            <img src="https://github-readme-streak-stats.herokuapp.com/?user=chris-t-li&theme=dark&background=000000"></img>
 
             <a href="#work" className="fa-solid fa-arrow-down"></a>
 
