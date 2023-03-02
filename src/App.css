@@ -477,6 +477,7 @@ footer p a {
 
   section#intro {
     height: 100vh;
+    width: 100vw;
     background-size: 150vh;
     background-position-x: -25em;
     margin: -2em;
@@ -503,6 +504,7 @@ footer p a {
   section#aboutMe {
     background-size: 150vh;
     height: 100vh;
+    width: 100vw;
   }
 
   section#aboutMe div.container {
@@ -529,6 +531,10 @@ footer p a {
 
   section#aboutMe div iframe {
     display: none;
+  }
+
+  section#tech-stack {
+    width: 100vw;
   }
 
   section#tech-stack h2 {
