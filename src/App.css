@@ -464,12 +464,22 @@ footer p a {
 
 
 @media screen and (max-width: 550px) {
+
+  #root {
+    width: 100vw;
+  }
+
+  header {
+    width: 100vw;
+  }
+
   header nav {
     display: none;
   }
 
   header div#socialMedia {
     height: 3em;
+    width: 100vw;
     display: flex;
     place-items: center;
     font-size: large;
@@ -510,7 +520,7 @@ footer p a {
   section#aboutMe div.container {
     padding: 1em 0 0 0;
     height: 100vh;
-    width: 25%;
+    /* width: 25%; */
     background-color: rgba(255, 255, 255, 0);
   }
 
@@ -545,8 +555,8 @@ footer p a {
   }
 
   section#tech-stack>.my-tech-stack {
-    width: 30%;
-    margin: 2em;
+    width: 95vw;
+    margin: 1em;
   }
 
   section#tech-stack div.github-stats {
